@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div id="profile">
+<h2>{{profile.user.username}}'s profile</h2><a href="{% url 'user_edit' id=user.id %}">Edit profile</a></h2>
+</div>
+<div class="card">
+
+<h2 class="profile-name">Name: {{profile.first_name}}</h2>
+<h4 class="profile-email">Email: {{profile.email}}</h4>
+\
+
+</br>
+
+
+</div>
+
+
+</div>
+
+{% endblock %}

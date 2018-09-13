@@ -1,0 +1,93 @@
+html, body {
+  height: 100%;
+}
+h3{
+  outline:white;
+}
+
+h1{
+  text-align: center;
+  color: navy;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+h4{
+  color:navy;
+}
+
+#profile{
+  text-align: center;
+
+  text-align: center;
+  font-family: arial;
+  margin-top: 25px;
+
+}
+p{
+  text-align:center;
+}
+.save-btn{
+    justify-content:center;
+    margin-left: 550px;
+
+}
+
+ a {
+  text-decoration: none;
+  color: navy;
+ }
+
+ .coverpic {
+  height:100%;
+  width:100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+}
+
+
+/**
+styles for top navigation bar
+*/
+
+.site-header {
+  background-color: grey;
+}
+
+.site-header a, .site-header .aslink {
+  color: floralwhite;
+  transition: ease-in-out color .15s;
+}
+
+footer {
+  background-color: grey !important;
+  color: #212529;
+}
+
+
+
+.profile-name{
+padding-top: 50px;
+ margin-left: 10px;
+}
+
+
+
+.center-text {
+  text-align: center;
+}
+
+
+.save{
+  color: navy;
+}
+
+
+h3 {
+  text-align: center;
+}

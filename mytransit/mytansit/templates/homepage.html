@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+<div class='row'>
+  <div class='col-md-9'>
+    <a class='btn btn-primary'>My Routes</a>
+    <br><br>
+  </div>
+  <div class='col-md-9'>
+    <a class='btn btn-primary' href="https://www.sfmta.com/getting-around/muni/routes-stops">All Routes</a>
+    <br><br>
+  </div>
+  {% endif %}
+  <div class='col-md-2'>
+    <a class='btn btn-primary' href="https://www.sfmta.com/news-blog">SFMTA News</a>
+    <a class='btn btn-primary' href="https://www.sfmta.com/travel-transit-updates">Transit Updates</a>
+    <br><br>
+  </div>
+
+  <div class='col-md-3'>
+    <a class='btn btn-primary' href="https://www.sfmta.com/visitors">Visitors Guide</a>
+    <a class='btn btn-primary' href="https://www.sfmta.com/getting-around/muni/fares">Fares</a>
+    <br><br>
+  </div>
+
+</div>
+
+
+{% endblock %}

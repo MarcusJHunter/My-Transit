@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+
+{% if error %}
+  <div class="alert alert-danger">
+    <p class="mb-0">{{ error }}</p>
+  </div>
+{% endif %}
+
+<div class="row">
+  <div class="col-10 col-md-6 offset-md-3 offset-1">
+    <h2 class="text-center mb-3">Signup</h2>
+    <form method="POST" action="{% url 'signup' %}">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input class="form-control" type="text" name="username" placeholder="Username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input class="form-control" type="text" name="email" placeholder="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password1">Password:</label>
+        <input class="form-control" type="password" name="password1" required>
+      </div>
+      <div class="form-group mb-4">
+        <label for="password2">Confirm Password:</label>
+        <input class="form-control" type="password" name="password2" required>
+      </div>
+      <input class="btn btn-primary float-right" type="submit" value="Sign Up!">
+    </form>
+  </div>
+</div>
+
+{% endblock %}
